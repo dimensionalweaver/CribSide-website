@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#0F3D72"/>
+      <stop offset="100%" stop-color="#0A2A4F"/>
+    </linearGradient>
+    <linearGradient id="glow3" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#F5A623"/>
+      <stop offset="100%" stop-color="#D4891A"/>
+    </linearGradient>
+    <radialGradient id="warmglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#F5A623" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="224" fill="url(#bg3)"/>
+
+  <!-- Warm glow behind the baby dot -->
+  <circle cx="512" cy="430" r="120" fill="url(#warmglow)"/>
+
+  <!-- Cradle — smooth U-shape curve -->
+  <path d="M300 500 Q300 640 512 640 Q724 640 724 500"
+        fill="none" stroke="#4BA3F5" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Cradle rocker base -->
+  <path d="M260 660 Q512 720 764 660"
+        fill="none" stroke="#4BA3F5" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Glowing dot — the baby -->
+  <circle cx="512" cy="500" r="28" fill="url(#glow3)"/>
+  <circle cx="512" cy="500" r="18" fill="#FFD06B"/>
+
+  <!-- Blanket drape over the cradle (cozy) -->
+  <path d="M380 490 Q440 460 512 470 Q580 478 600 490"
+        fill="none" stroke="#B3DAFF" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Small WiFi arcs above (subtle monitoring) -->
+  <path d="M488 390 Q512 370 536 390" fill="none" stroke="#7ABFFF" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <path d="M468 365 Q512 335 556 365" fill="none" stroke="#7ABFFF" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+  <path d="M448 340 Q512 300 576 340" fill="none" stroke="#7ABFFF" stroke-width="8" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Tiny stars for nighttime feel -->
+  <circle cx="200" cy="220" r="5" fill="#B3DAFF" opacity="0.4"/>
+  <circle cx="780" cy="180" r="4" fill="#B3DAFF" opacity="0.3"/>
+  <circle cx="820" cy="300" r="3" fill="#B3DAFF" opacity="0.25"/>
+  <circle cx="250" cy="340" r="3" fill="#B3DAFF" opacity="0.2"/>
+
+  <!-- Text: cribside -->
+  <text x="512" y="820" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, SF Pro Rounded, Helvetica Neue, sans-serif" font-size="100" font-weight="700" letter-spacing="-2" opacity="0.95">cribside</text>
+</svg>

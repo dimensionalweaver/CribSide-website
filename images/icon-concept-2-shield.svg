@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14549A"/>
+      <stop offset="100%" stop-color="#0A2A4F"/>
+    </linearGradient>
+    <linearGradient id="shield2" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#4BA3F5"/>
+      <stop offset="30%" stop-color="#2B88E6"/>
+      <stop offset="100%" stop-color="#1A6DC4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="224" fill="url(#bg2)"/>
+
+  <!-- Shield shape -->
+  <path d="M512 160 L760 280 L760 520 Q760 700 512 820 Q264 700 264 520 L264 280 Z"
+        fill="url(#shield2)" opacity="0.2" stroke="#4BA3F5" stroke-width="6"/>
+
+  <!-- Inner shield (smaller, brighter) -->
+  <path d="M512 220 L710 320 L710 510 Q710 660 512 760 Q314 660 314 510 L314 320 Z"
+        fill="none" stroke="#4BA3F5" stroke-width="4" opacity="0.5"/>
+
+  <!-- Minimal crib inside shield -->
+  <!-- Crib base — curved cradle shape -->
+  <path d="M390 540 Q450 600 512 600 Q574 600 634 540"
+        fill="none" stroke="#DCEEFF" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Crib sides (vertical bars) -->
+  <line x1="390" y1="420" x2="390" y2="545" stroke="#DCEEFF" stroke-width="10" stroke-linecap="round"/>
+  <line x1="634" y1="420" x2="634" y2="545" stroke="#DCEEFF" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Crib rails (horizontal) -->
+  <line x1="390" y1="420" x2="634" y2="420" stroke="#DCEEFF" stroke-width="10" stroke-linecap="round"/>
+  <line x1="395" y1="470" x2="629" y2="470" stroke="#DCEEFF" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Tiny signal dots above crib (monitoring) -->
+  <circle cx="512" cy="380" r="8" fill="#7ABFFF"/>
+  <path d="M480 360 Q512 330 544 360" fill="none" stroke="#7ABFFF" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M458 340 Q512 300 566 340" fill="none" stroke="#7ABFFF" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Text: cribside -->
+  <text x="512" y="900" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, SF Pro Rounded, Helvetica Neue, sans-serif" font-size="84" font-weight="700" letter-spacing="-1" opacity="0.9">cribside</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- V1: Classic — Bold crescent with clean signal arcs, centered composition -->
+  <defs>
+    <linearGradient id="v1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F3D72"/>
+      <stop offset="100%" stop-color="#0A2A4F"/>
+    </linearGradient>
+    <linearGradient id="v1moon" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#B3DAFF"/>
+      <stop offset="100%" stop-color="#7ABFFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="url(#v1bg)"/>
+
+  <!-- Crescent moon — large and centered -->
+  <circle cx="440" cy="460" r="260" fill="url(#v1moon)"/>
+  <circle cx="540" cy="370" r="230" fill="url(#v1bg)"/>
+
+  <!-- Signal arcs from the inner curve -->
+  <path d="M570 560 Q610 510 570 460" fill="none" stroke="#4BA3F5" stroke-width="20" stroke-linecap="round" opacity="0.85"/>
+  <path d="M620 600 Q680 510 620 420" fill="none" stroke="#4BA3F5" stroke-width="20" stroke-linecap="round" opacity="0.55"/>
+  <path d="M670 640 Q750 510 670 380" fill="none" stroke="#4BA3F5" stroke-width="20" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Signal origin dot -->
+  <circle cx="548" cy="510" r="18" fill="#7ABFFF"/>
+
+  <!-- Stars -->
+  <circle cx="760" cy="300" r="7" fill="#B3DAFF" opacity="0.5"/>
+  <circle cx="820" cy="420" r="5" fill="#B3DAFF" opacity="0.35"/>
+  <circle cx="700" cy="240" r="4" fill="#B3DAFF" opacity="0.25"/>
+</svg>
