@@ -38,7 +38,7 @@
 
       <div class="faq-item">
         <h3>What devices do I need?</h3>
-        <p>You need at least two Apple devices: one for the Monitor and one for the Receiver. Cribside works on iPhone, iPad, and Mac running iOS 17, iPadOS 17, or macOS 14 and later.</p>
+        <p>You need at least two Apple devices: one for the Monitor and one for the Receiver. Cribside works on iPhone and iPad as both monitor and receiver, Mac and Apple TV as receivers, and Apple Watch for crying and fussing notifications. macOS is receiver-only &mdash; it cannot act as a monitor.</p>
       </div>
 
       <div class="faq-item">
@@ -77,7 +77,7 @@
 
       <div class="faq-item">
         <h3>What is sound detection?</h3>
-        <p>Cribside monitors the audio level from the nursery and can alert you when it detects sounds above a threshold you set. This helps you know when your baby is stirring, fussing, or crying.</p>
+        <p>Cribside monitors the audio level from the nursery and alerts you when it detects fussing or crying. You can configure the sensitivity to match your environment. The receiver shows real-time audio level bars so you can see nursery activity at a glance.</p>
       </div>
 
       <h2>Privacy &amp; Security</h2>
@@ -89,7 +89,7 @@
 
       <div class="faq-item">
         <h3>Is the stream encrypted?</h3>
-        <p>Yes. All streams are encrypted with DTLS using AES-256-GCM. Even on your own network, your data is protected.</p>
+        <p>Yes. Video and audio streams are encrypted with DTLS 1.2 using AES-256-GCM, and the control channel uses TLS 1.3. Key exchange uses X25519, and session keys are derived using HKDF and strengthened with your PIN. Even on your local network, everything is protected.</p>
       </div>
 
       <div class="faq-item">
@@ -106,7 +106,57 @@
 
       <div class="faq-item">
         <h3>Can I use it on all my devices?</h3>
-        <p>Yes. Your purchase applies to your Apple ID. Download Cribside on any iPhone, iPad, or Mac signed in with the same Apple ID at no extra cost.</p>
+        <p>Yes. Your purchase applies to your Apple ID. Download Cribside on any iPhone, iPad, Mac, or Apple TV signed in with the same Apple ID at no extra cost.</p>
+      </div>
+
+      <h2>Apple TV</h2>
+
+      <div class="faq-item">
+        <h3>How do I use Cribside on Apple TV?</h3>
+        <p>Download Cribside from the App Store on your Apple TV. It launches directly in receiver mode. Use the Siri Remote d-pad to enter the PIN shown on your monitor device. Once connected, you can use the volume up/down buttons on the remote to adjust audio.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can Apple TV act as a monitor?</h3>
+        <p>No. Apple TV works as a receiver only. It displays the live video and audio feed from a monitor device (iPhone or iPad).</p>
+      </div>
+
+      <h2>Picture-in-Picture</h2>
+
+      <div class="faq-item">
+        <h3>How do I use Picture-in-Picture?</h3>
+        <p>On iOS, tap the PiP button while viewing the live feed. The video shrinks to a floating window that stays visible while you use other apps. You can resize, reposition, or close it using the standard system PiP controls.</p>
+      </div>
+
+      <h2>Apple Watch</h2>
+
+      <div class="faq-item">
+        <h3>What notifications appear on Apple Watch?</h3>
+        <p>When your iPhone is connected as a receiver, crying and fussing alerts are automatically relayed to your Apple Watch as time-sensitive notifications. No separate Watch app is needed &mdash; it works through your iPhone's companion relay.</p>
+      </div>
+
+      <h2>Video &amp; Audio Controls</h2>
+
+      <div class="faq-item">
+        <h3>Can I zoom in on the video?</h3>
+        <p>Yes. Pinch to zoom up to 5&times; on the live video. Pan around when zoomed in. Double-tap to reset to the default view.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I boost the volume?</h3>
+        <p>Yes. The receiver volume can be boosted up to 200%, which is helpful when your phone speaker is across the room.</p>
+      </div>
+
+      <h2>Connection</h2>
+
+      <div class="faq-item">
+        <h3>What happens if the connection drops?</h3>
+        <p>Cribside automatically reconnects. Session tokens are stored securely in your device's Keychain, so no re-authentication is needed after brief disconnects. The app uses exponential backoff to reconnect without flooding your network.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does macOS work as a monitor?</h3>
+        <p>No. On macOS, Cribside works as a receiver only. You can watch and listen to the live feed, but the monitor role (camera and microphone) requires an iPhone or iPad.</p>
       </div>
 
       <!-- Contact -->
